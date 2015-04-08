@@ -1,3 +1,5 @@
+THIS IS A FORK FROM https://github.com/markuman/go-redis
+
 # go-redis
 
 go-redis - **G**NU **O**ctave **redis** client

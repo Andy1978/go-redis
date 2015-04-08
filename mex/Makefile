@@ -1,8 +1,12 @@
 .PHONY:clean
 .PHONY:check
+.PHONY:style
 
 redis_.mex: redis_.c
 	mkoctfile -Wall -Wextra -v -I/usr/include/hiredis --mex $< -lhiredis
+
+style:
+	astyle --style=gnu -s2 redis_.c
 
 check: redis_.mex
 	octave -f -q --no-gui --eval 'test_redis, disp("----------"), test_redis'
