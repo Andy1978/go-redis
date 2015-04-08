@@ -1,5 +1,6 @@
 % test go-redis
 
+% needs a lokal redis-server
 % using host: 127.0.0.1
 % using port 6379
 
